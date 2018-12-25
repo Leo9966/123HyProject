@@ -325,7 +325,6 @@ class Home extends React.Component {
         }
     }
 
-
     render() {
 
         // if (!this.state.gridCategory || JSON.stringify(this.state.gridCategory) === '[]') {
@@ -372,7 +371,6 @@ class Home extends React.Component {
         }       
 
         return <Layout header={true} footer={true}>
-
             {/* <Carousel carouselData={this.state.carousel} /> */}
             <div className="carousel_view">
             <Carousel

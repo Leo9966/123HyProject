@@ -25,7 +25,7 @@ function getServerHost() {
 
 function getServerIp() {
     // return "//admin.lvxingbox.cn";
-    return "//ymymmall.swczyc.com";
+    return "//admin.swczyc.com";
 }
 
 const wxconfig = {
