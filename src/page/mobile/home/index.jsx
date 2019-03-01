@@ -164,6 +164,7 @@ class Home extends React.Component {
         // let uuuu = 27;
         // let leoname = 'Guihuan';
         // homeApi.loginCheck(leoopid, uuuu, leoname, (rs) => {
+        //测试注释
         homeApi.loginCheck(myopenid, uid, wechatName, (rs) => {
             if (rs && rs.success) {
                 
