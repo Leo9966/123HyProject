@@ -250,7 +250,6 @@ class Home extends React.Component {
         homeApi.getCarousel((rs) => {
             if(rs && rs.success) {
                 const carousel = rs.obj;
-
                 this.setState({
                     carousel,
                 });

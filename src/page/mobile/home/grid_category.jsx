@@ -247,7 +247,7 @@ export default class GridCategory extends React.Component {
             <Flex.Item  key={index} className="product_card"
                                style={{marginBottom:'0.1rem', flex:'0 0 30%', marginLeft:'1.5%', marginRight:'1.5%'}}>             
                 <Link to={{pathname: `/home/sales/detail`, state: item.id}}>
-                    <div><img src={"http://" + getServerIp() + item.iconURL} style={{width:'6rem', height: '6rem'}}/></div> 
+                    <div><img src={"http://" + getServerIp() + item.pics[0].mediumPath} style={{width:'6rem', height: '6rem'}}/></div> 
                     {/* <div><img style={{width:'6rem', height: '6rem'}}/></div> */}
                     <WhiteSpace/>
                     <div className="product_name">{item.name}</div> 
@@ -266,7 +266,7 @@ export default class GridCategory extends React.Component {
             <Flex.Item  key={index} className="product_card"
                                style={{marginBottom:'0.1rem', flex:'0 0 30%', marginLeft:'1.5%', marginRight:'1.5%'}}>
                 <Link to={{pathname: `/home/sales_group/detail`, state: item.id}}>
-                    <div><img src={"http://" + getServerIp() + item.iconURL} style={{width:'6rem', height: '6rem'}}/></div> 
+                    <div><img src={"http://" + getServerIp() + item.pics[0].mediumPath} style={{width:'6rem', height: '6rem'}}/></div> 
                     {/* <div><img style={{width:'6rem', height: '6rem'}}/></div> */}
                     <WhiteSpace/>
                     <div className="product_name">{item.name}</div> 
@@ -285,7 +285,7 @@ export default class GridCategory extends React.Component {
             <Flex.Item  key={index} className="product_card"
                                style={{marginBottom:'0.1rem', flex:'0 0 30%', marginLeft:'1.5%', marginRight:'1.5%'}}>
                 <Link to={`/product/${item.specialty.id}`}>
-                    <div><img src={"http://" + getServerIp() + item.iconURL} style={{width:'6rem', height: '6rem'}}/></div>
+                    <div><img src={"http://" + getServerIp() + item.iconURL.mediumPath} style={{width:'6rem', height: '6rem'}}/></div>
                     <WhiteSpace/>
                     <div className="product_name">{item.specialty.name}</div> 
                     <WhiteSpace/>

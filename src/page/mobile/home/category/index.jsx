@@ -299,7 +299,7 @@ export default class Category extends React.Component {
                     <div key={rowID} style={{ padding: '0 15px' }}>
                     <Link to={{pathname: `/product/${obj.specialty.id}`}}>
                         <div style={{ display: 'flex', padding: '15px 0' }}>
-                            <img style={{ height: '4rem', width:'25%', marginRight: '2rem' }} src={"http://" + getServerIp() + obj.iconURL}/>
+                            <img style={{ height: '4rem', width:'25%', marginRight: '2rem' }} src={"http://" + getServerIp() + obj.iconURL.mediumPath}/>
                             <div style={{ lineHeight: 1 , color:'black'}}>
                                 <div style={{marginBottom: 10}}>{obj.specialty.name}</div>
                                 <div style={{marginBottom: 10}}><span style={{color:'darkorange'}}>￥{obj.pPrice}元</span></div>

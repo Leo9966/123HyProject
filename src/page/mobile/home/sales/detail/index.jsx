@@ -101,7 +101,7 @@ export default class SalesDetail extends React.Component {
     checkNoticeBar() {
         if (this.state.ruleType === '满赠') {
             return <NoticeBar marqueeProps={{ loop: true, style: { padding: '0 7.5px' } }} mode="closable" action={<span style={{ color: '#a1a1a1' }}>不再提示</span>}>
-                您只需要点击优惠商品内购买即可，赠品会附带上
+                您只需要点击优惠商品购买即可，赠品会附带上。
             </NoticeBar>
         }
     }
